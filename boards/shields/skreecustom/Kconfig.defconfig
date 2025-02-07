@@ -16,4 +16,7 @@ if SHIELD_SKREECUSTOM_LEFT || SHIELD_SKREECUSTOM_RIGHT
 config ZMK_SPLIT
     default y
 
+config SPI
+    default y
+
 endif
