@@ -8,9 +8,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -19,53 +17,53 @@
 
         default_layer {
             bindings = <
-&kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC 
-&kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC 
-&kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC 
-&kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC 
-&kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC 
-&kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC &kp ESC 
-                                &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC
-                                &kp ESC &kp ESC &kp ESC         &kp ESC &kp ESC &kp ESC
+&kp F1     &kp F2  &kp F3   &kp F4   &kp F5    &kp F6           &kp F7             &kp ESC  &kp ESC   &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&kp F8     &kp F9  &kp F10  &kp F11  &kp F12   &kp BSPC         &kp BSLH           &kp ESC  &kp ESC   &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&kp ESC    &kp Q   &kp W    &kp E    &kp R     &kp T            &kp Y              &kp ESC  &kp ESC   &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&kp TAB    &kp A   &kp S    &kp D    &kp F     &kp G            &kp H              &kp ESC  &kp ESC   &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&kp LSHFT  &kp Z   &kp X    &kp C    &kp V     &kp B            &kp N              &kp ESC  &kp ESC   &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+&kp U      &kp I   &kp O    &kp P    &kp LBKT  &kp RBKT         &kp FSLH           &kp ESC  &kp ESC   &kp ESC  &kp ESC  &kp ESC  &kp ESC  &kp ESC
+                                     &kp N     &kp M            &kp COMMA          &kp DOT  &kp FSLH  &kp ESC
+                                     &kp DOT   &rgb_ug RGB_EFF  &rgb_ug RGB_TOG    &kp ESC  &kp ESC   &kp ESC
             >;
         };
 
         layer_1 {
             bindings = <
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-                            &trans &trans &trans            &trans &trans &trans
-                            &trans &trans &trans            &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-                            &trans &trans &trans            &trans &trans &trans
-                            &trans &trans &trans            &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-&trans &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans &trans  
-                            &trans &trans &trans            &trans &trans &trans
-                            &trans &trans &trans            &trans &trans &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
+                                &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
