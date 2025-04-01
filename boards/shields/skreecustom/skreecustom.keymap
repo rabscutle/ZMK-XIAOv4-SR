@@ -11,6 +11,61 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    combos { compatible = "zmk,combos"; };
+
+    macros {
+        CURPASS: CURPASS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp P &kp P &kp E &kp R &kp T &kp A &kp I &kp N &kp I &kp N &kp G &kp LS(M) &kp O &kp N &kp E &kp Y &kp DLLR &kp N9>;
+            label = "CURPASS";
+        };
+
+        RABS: RABS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp A &kp B &kp S &kp C &kp U &kp T &kp L &kp E>;
+            label = "RABS";
+        };
+
+        PKH: PKH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp K &kp H &kp T &kp E &kp X &kp A &kp S &kp AT &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp M>;
+            label = "PKH";
+        };
+
+        UID: UID {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N0 &kp N0 &kp N9 &kp N8 &kp N6 &kp N6>;
+            label = "UID";
+        };
+
+        EMAIL: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp A &kp T &kp R &kp I &kp C &kp K &kp DOT &kp H &kp E &kp N &kp S &kp O &kp N &kp AT &kp S &kp T &kp A &kp N &kp D &kp A &kp R &kp D &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+
+        HANGER: HANGER {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp LS(O) &kp DLLR &kp D &kp N0 &kp LS(N) &kp LS(T) &kp N &kp N3 &kp POUND &kp LS(D) &kp UNDER &kp H &kp LS(A) &kp LS(T) &kp N2 &kp LS(B) &kp A &kp C &kp N0 &kp LS(W) &kp LS(B) &kp N0 &kp LS(Y)>;
+            label = "HANGER";
+        };
+
+        HANGERU: HANGERU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Y) &kp O &kp DLLR &kp LS(D) &kp N0 &kp N &kp T &kp LS(N) &kp N3 &kp POUND &kp D &kp UNDER &kp LS(H) &kp A &kp T &kp N2 &kp B &kp LS(A) &kp LS(C) &kp N0 &kp W &kp B &kp N0 &kp Y>;
+            label = "HANGERU";
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -56,11 +111,11 @@
 
         CLMRK {
             bindings = <
-&kp ESC   &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp MINUS
-&kp TAB   &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
-&kp CAPS  &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                  &kp F2  &kp F5                                    &kp DEL    &trans
-          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans   &trans
+&kp ESC     &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp TAB     &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
+&kp CAPS    &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                    &kp F2  &kp F5                                               &kp DEL  &kp K_MUTE
+            &lt 1 SPACE  &kp LSHFT  &kp ENTER  &kp LALT  &kp LCTRL    &kp SQT  &kp LGUI  &kp BSPC   &kp SPACE   &lt 3 SPACE
             >;
         };
     };
