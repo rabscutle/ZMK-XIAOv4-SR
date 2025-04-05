@@ -1,0 +1,122 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+//#include <behaviors/mouse_keys.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+
+/ {
+    combos { compatible = "zmk,combos"; };
+
+    macros {
+        CURPASS: CURPASS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp P &kp P &kp E &kp R &kp T &kp A &kp I &kp N &kp I &kp N &kp G &kp LS(M) &kp O &kp N &kp E &kp Y &kp DLLR &kp N9>;
+            label = "CURPASS";
+        };
+
+        RABS: RABS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp A &kp B &kp S &kp C &kp U &kp T &kp L &kp E>;
+            label = "RABS";
+        };
+
+        PKH: PKH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp K &kp H &kp T &kp E &kp X &kp A &kp S &kp AT &kp Y &kp A &kp H &kp O &kp O &kp DOT &kp C &kp O &kp M>;
+            label = "PKH";
+        };
+
+        UID: UID {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp N0 &kp N0 &kp N9 &kp N8 &kp N6 &kp N6>;
+            label = "UID";
+        };
+
+        EMAIL: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp A &kp T &kp R &kp I &kp C &kp K &kp DOT &kp H &kp E &kp N &kp S &kp O &kp N &kp AT &kp S &kp T &kp A &kp N &kp D &kp A &kp R &kp D &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
+
+        HANGER: HANGER {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp LS(O) &kp DLLR &kp D &kp N0 &kp LS(N) &kp LS(T) &kp N &kp N3 &kp POUND &kp LS(D) &kp UNDER &kp H &kp LS(A) &kp LS(T) &kp N2 &kp LS(B) &kp A &kp C &kp N0 &kp LS(W) &kp LS(B) &kp N0 &kp LS(Y)>;
+            label = "HANGER";
+        };
+
+        HANGERU: HANGERU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Y) &kp O &kp DLLR &kp LS(D) &kp N0 &kp N &kp T &kp LS(N) &kp N3 &kp POUND &kp D &kp UNDER &kp LS(H) &kp A &kp T &kp N2 &kp B &kp LS(A) &kp LS(C) &kp N0 &kp W &kp B &kp N0 &kp Y>;
+            label = "HANGERU";
+        };
+    };
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        QTY {
+            bindings = <
+&kp ESC    &kp Q        &kp W      &kp E      &kp R     &kp T       &kp Y    &kp U     &kp I      &kp O       &kp P        &kp MINUS
+&lt 2 TAB  &kp A        &kp S      &kp D      &kp F     &kp G       &kp H    &kp J     &kp K      &kp L       &kp SEMI     &kp APOS
+&kp CAPS   &kp Z        &kp X      &kp C      &kp V     &kp B       &kp N    &kp M     &kp COMMA  &kp DOT     &kp FSLH     &kp BSLH
+                        &kp F2     &kp F5                                              &kp DEL    &kp K_MUTE
+           &lt 1 SPACE  &kp LSHFT  &kp BSPC   &kp LALT  &kp LCTRL   &lt 3 SPACE &kp SPACE   &kp ENTER   &kp LGUI    &kp SQT   
+            >;
+        };
+
+        LWR {
+            bindings = <
+&kp LS(TILDE)  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp MINUS
+&kp GRAVE      &kp N1         &kp N2        &kp N3         &kp N4        &kp N5           &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &kp PLUS
+&kp DEL        &kp LS(TILDE)  &kp GRAVE     &kp LS(PIPE)   &kp LS(LBRC)  &kp LBKT         &kp RBKT       &kp LS(RBRC)  &kp MINUS     &kp EQUAL     &kp PLUS      &kp EQUAL
+                              &kp LS(LBRC)  &kp LBKT                                                                   &kp RBKT      &kp LS(RBRC)
+               &trans         &kp SPACE     &kp BSPC       &kp LALT      &kp LCTRL        &kp SQT        &kp DEL       &kp RET       &kp SPACE     &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans       &kp LCTRL      &kp LC(PRINTSCREEN)  &kp LS(LCTRL)  &kp LSHFT      &kp LC(Y)  &kp HOME  &kp END           &kp PG_UP          &kp PG_DN  &trans
+&trans  &kp LC(A)    &kp LC(S)      &kp LC(X)            &kp LC(C)      &kp LC(V)      &kp LC(H)  &kp LEFT  &kp DOWN          &kp UP             &kp RIGHT  &kp F12
+&trans  &kp LC(Z)    &kp LC(I)      &kp LC(B)            &kp LC(F)      &kp LC(RET)    &trans     &trans    &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &kp LGUI   &kp LEFT
+                     &trans         &trans                                                                  &kp LS(LG(LEFT))  &kp LG(LS(RIGHT))
+        &kp LC(TAB)  &kp LC(RS(M))  &kp LC(LS(O))        &kp LC(LS(K))  &trans         &trans     &trans    &trans            &trans             &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                &trans  &trans                                    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans
+            >;
+        };
+
+        CLMRK {
+            bindings = <
+&kp ESC     &kp Q   &kp W   &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp MINUS
+&kp TAB     &kp A   &kp R   &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
+&kp CAPS    &kp Z   &kp X   &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
+                    &kp F2  &kp F5                                               &kp DEL  &kp K_MUTE
+           &lt 1 SPACE  &kp LSHFT  &kp BSPC   &kp LALT  &kp LCTRL   &lt 3 SPACE &kp SPACE   &kp ENTER   &kp LGUI    &kp SQT
+            >;
+        };
+    };
+};
