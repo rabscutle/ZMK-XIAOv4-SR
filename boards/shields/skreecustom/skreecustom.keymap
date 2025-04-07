@@ -133,11 +133,10 @@
 };
 
 # define QTY 1
-# define CLK 2
-# define LWR 3
-# define RSE 4
-# define ADJ 5
-# define OTH 6
+# define LWR 2
+# define RSE 3
+# define ADJ 4
+# define OTH 5
 
 / {
     keymap {
@@ -153,15 +152,15 @@
             >;
         };
 
-        CLK {
-            bindings = <
-&kp ESC     &kp Q           &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U        &kp Y       &kp SEMI    &kp MINUS
-&lt RSE TAB &kp A           &kp R       &kp S       &kp T       &kp G       &kp M       &kp N       &kp E        &kp I       &kp O       &kp APOS
-&kp CAPS    &kp Z           &kp X       &kp C       &kp D       &kp V       &kp K       &kp H       &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
-                            &kp F2      &kp F5                                                      &kp DEL    &kp C_MUTE
-            &lt LWR SPACE   &kp LSHFT   &kp BSPC    &kp LALT    &kp LCTRL   &lt ADJ TAB &kp SPACE   &kp ENTER  &kp LGUI    &kp APOS
-            >;
-        };
+/*        CLK {
+*            bindings = <
+* &kp ESC     &kp Q           &kp W       &kp F       &kp P       &kp B       &kp J       &kp L       &kp U        &kp Y       &kp SEMI    &kp MINUS
+* &lt RSE TAB &kp A           &kp R       &kp S       &kp T       &kp G       &kp M       &kp N       &kp E        &kp I       &kp O       &kp APOS
+* &kp CAPS    &kp Z           &kp X       &kp C       &kp D       &kp V       &kp K       &kp H       &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
+*                            &kp F2      &kp F5                                                      &kp DEL    &kp C_MUTE
+*            &lt LWR SPACE   &kp LSHFT   &kp BSPC    &kp LALT    &kp LCTRL   &lt ADJ TAB &kp SPACE   &kp ENTER  &kp LGUI    &kp APOS
+*            >;
+*/        };
 
         LWR {
             bindings = <
