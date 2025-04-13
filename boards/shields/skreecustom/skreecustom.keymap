@@ -158,7 +158,7 @@
 &kp GRAVE   &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   &kp PLUS
 &kp DEL     &kp TILDE   &kp GRAVE   &kp PIPE    &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC    &kp LT      &kp GT      &kp QMARK   &kp EQUAL
                         &kp LBRC    &kp LBKT                                                    &kp RBKT    &kp RBRC
-            &trans      &kp SPACE   &kp BSPC    &kp LALT    &kp LCTRL   &kp LNLCK   &kp SPACE   &kp ENTER   &kp SPACE   &kp C_PP
+            &trans      &kp SPACE   &kp BSPC    &kp LALT    &kp LCTRL   &kp KP_NUM  &kp SPACE   &kp ENTER   &kp SPACE   &kp C_PP
             >;
         };
 
@@ -176,9 +176,9 @@
             bindings = <
 &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp C_PP
 &none       &none       &OP2        &OP1        &LPA        &WKPG       &RABS       &PKH        &none       &kp F11     &kp F12     &kp C_NEXT
-&none       &none       &none       &OWTTc      &OWTT       &OWOG       &trans      &trans      &none       &none       &kp SLCK    &kp C_PREV
+&none       &none       &none       &OWTTc      &OWTT       &OWOG       &none       &none       &none       &none       &kp SLCK    &kp C_PREV
                         &none       &none                                           &bt BT_NXT  &bt BT_PRV
-            &CPS        &UID        &EML        &HANGER     &HANGERU    &trans      &to 4       &none       &none       &trans
+            &CPS        &UID        &EML        &HANGER     &HANGERU    &none       &to 4       &none       &none       &trans
             >;
         };
 
