@@ -52,7 +52,7 @@
         CPS: CPS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp P &kp P &kp E &kp R &kp T &kp A &kp I &kp N &kp I &kp N &kp G &kp LS(M) &kp O &kp N &kp E &kp Y &kp DLLR &kp N9>;
+            bindings = <&kp Y &kp O &kp U &kp K &kp N &kp O &kp W &kp F &kp O &kp R &kp LS(K) &kp I &kp D &kp S &kp POUND &kp N2>;
             label = "CPS";
         };
 
@@ -115,14 +115,14 @@
         OP1: OP1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U &kp H &kp A &kp V &kp E &kp C &kp R &kp A &kp Z &kp Y &kp E &kp Y &kp E &kp LS(S) &kp POUND &kp N8>;
+            bindings = <&kp A &kp P &kp P &kp E &kp R &kp T &kp A &kp I &kp N &kp I &kp N &kp G &kp LS(M) &kp O &kp N &kp E &kp Y &kp DLLR &kp N9>;
             label = "OP1";
         };
 
         OP2: OP2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp P &kp Y &kp G &kp M &kp Y &kp D &kp O &kp N &kp K &kp E &kp Y &kp F &kp R &kp U &kp I &kp LS(T) &kp N4 &kp POUND>;
+            bindings = <&kp Y &kp O &kp U &kp H &kp A &kp V &kp E &kp C &kp R &kp A &kp Z &kp Y &kp E &kp Y &kp E &kp LS(S) &kp POUND &kp N8>;
             label = "OP2";
         };
 
