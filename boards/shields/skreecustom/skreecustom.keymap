@@ -155,7 +155,6 @@
 # define ADJ 4
 # define OTH 5
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
