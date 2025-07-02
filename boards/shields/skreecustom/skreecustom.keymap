@@ -175,7 +175,7 @@
 &kp GRAVE       &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0   &kp PLUS
 &kp DEL         &kp TILDE   &kp GRAVE   &kp PIPE    &kp LBRC    &kp LBKT    &kp RBKT    &kp RBRC    &kp LT      &kp GT      &kp QMARK   &kp EQUAL
                             &kp LBRC    &kp LBKT                                                    &kp RBKT    &kp RBRC
-                &kp SPACE   &trans      &kp BSPC    &kp LALT    &kp LCTRL   &kp KP_NUM  &kp SPACE   &kp ENTER   &kp SPACE   &kp C_PP
+                &trans      &kp SPACE   &kp BSPC    &kp LALT    &kp LCTRL   &kp KP_NUM  &kp SPACE   &kp ENTER   &kp SPACE   &kp C_PP
             >;
         };
 
