@@ -51,7 +51,7 @@
         CPS: CPS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp H &kp E &kp R &kp E &kp S &kp T &kp H &kp E &kp K &kp B &kp N0 &kp N0 &kp LS(M) &kp LS(QMARK)>;
+            bindings = <&kp W &kp H &kp E &kp R &kp E &kp S &kp T &kp H &kp E &kp K &kp A &kp B &kp N0 &kp N0 &kp LS(M) &kp LS(QMARK)>;
             label = "CPS";
         };
 
