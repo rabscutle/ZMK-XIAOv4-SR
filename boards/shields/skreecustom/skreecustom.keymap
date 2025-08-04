@@ -51,7 +51,7 @@
         CPS: CPS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U &kp K &kp N &kp O &kp W &kp F &kp O &kp R &kp LS(K) &kp I &kp D &kp S &kp DLLR &kp N2>;
+            bindings = <&kp W &kp H &kp E &kp R &kp E &kp S &kp T &kp H &kp E &kp K &kp B &kp N0 &kp N0 &kp LS(M) &kp LS(QMARK)>;
             label = "CPS";
         };
 
@@ -114,7 +114,7 @@
         OP1: OP1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp P &kp P &kp E &kp R &kp T &kp A &kp I &kp N &kp I &kp N &kp G &kp LS(M) &kp O &kp N &kp E &kp Y &kp DLLR &kp N9>;
+            bindings = <&kp Y &kp O &kp U &kp K &kp N &kp O &kp W &kp F &kp O &kp R &kp LS(K) &kp I &kp D &kp S &kp DLLR &kp N2>;
             label = "OP1";
         };
 
