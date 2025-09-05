@@ -165,7 +165,7 @@
                 &r_lt 2 TAB         &kp A           &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K      &kp L       &kp SEMI     &kp APOS
                 &r_mt LSHIFT CAPS   &kp Z           &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA  &kp DOT     &kp FSLH     &kp BSLH
                                                     &kp F2      &kp F5                                                      &kp DEL    &kp C_MUTE
-                                    &r_lt 1 SPACE   &kp LSHFT   &kp BSPC    &kp LALT    &kp LCTRL   &r_lt 3 TAB &kp SPACE   &kp ENTER  &kp LGUI    &kp &r_lt 4 TAB
+                                    &r_lt 1 SPACE   &kp LSHFT   &kp BSPC    &kp LALT    &kp LCTRL   &r_lt 3 TAB &kp SPACE   &kp ENTER  &kp LGUI    &r_lt 4 TAB
             >;
         };
 
