@@ -181,11 +181,11 @@
 
         RSE {
             bindings = <
-                &trans          &kp LALT    &kp LCTRL       &kp LC(PSCRN)   &kp LS(LCTRL)  &kp LSHFT    &kp LC(Y)   &kp HOME    &kp END             &kp PG_UP           &kp PG_DN   &trans
-                &trans          &kp LC(A)   &kp LC(S)       &kp LC(X)       &kp LC(C)      &kp LC(V)    &kp LC(H)   &kp LEFT    &kp DOWN            &kp UP              &kp RIGHT   &kp SLCK
-                &trans          &kp LC(Z)   &kp LC(I)       &kp LC(B)       &kp LC(F)      &kp LC(RET)  &trans      &trans      &kp LG(LC(LEFT))    &kp LG(LC(RIGHT))   &kp LGUI    &kp PAUSE_BREAK
-                                            &kp INS         &kp K_APP                                                           &kp LS(LG(LEFT))    &kp LG(LS(RIGHT))
-                                &kp LC(TAB) &kp LC(RS(M))   &kp LC(LS(O))   &kp LC(LS(K))  &trans       &kp TAB     &trans      &trans              &trans              &trans
+                &trans          &kp LALT    &kp LCTRL       &kp LC(PSCRN)   &kp LS(LCTRL)  &kp LSHFT    &kp LC(Y)       &kp HOME        &kp END             &kp PG_UP           &kp PG_DN   &trans
+                &trans          &kp LC(A)   &kp LC(S)       &kp LC(X)       &kp LC(C)      &kp LC(V)    &kp LC(H)       &kp LEFT        &kp DOWN            &kp UP              &kp RIGHT   &kp SLCK
+                &trans          &kp LC(Z)   &kp LC(I)       &kp LC(B)       &kp LC(F)      &kp LC(RET)  &trans          &trans          &kp LG(LC(LEFT))    &kp LG(LC(RIGHT))   &kp LGUI    &kp PAUSE_BREAK
+                                            &kp INS         &kp K_APP                                                                   &kp LS(LG(LEFT))    &kp LG(LS(RIGHT))
+                                &kp LC(TAB) &kp LC(RS(M))   &kp LC(LS(O))   &kp LC(LS(K))  &trans       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2        &bt BT_NXT          &bt BT_PRV
             >;
         };
 
