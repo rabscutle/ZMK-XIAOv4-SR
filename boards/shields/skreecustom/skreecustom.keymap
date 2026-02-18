@@ -51,7 +51,7 @@
         CPS: CPS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp M &kp H &kp U &kp N &kp T &kp I &kp N &kp G &kp W &kp A &kp B &kp B &kp I &kp T &kp LS(S) &kp DLLR &kp N2>;
+            bindings = <&kp M &kp A &kp C &kp H &kp I &kp N &kp E &kp D &kp O &kp N &kp T &kp S &kp T &kp O &kp P &kp LS(P) &kp AT &kp N1>;
             label = "CPS";
         };
 
@@ -75,7 +75,7 @@
             bindings = <&kp S &kp N0 &kp N0 &kp N9 &kp N8 &kp N6 &kp N6>;
             label = "UID";
         };
-
+                           
         EML: EML {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -104,25 +104,25 @@
             label = "WKPG";
         };
 
-        LPA: LPA {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp I &kp N &kp E &kp T &kp H &kp R &kp E &kp E &kp F &kp O &kp U &kp R &kp T &kp E &kp LS(X) &kp A &kp S &kp POUND &kp N2 &kp N1>;
-            label = "LPA";
-        };
-
         OP1: OP1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U &kp K &kp N &kp O &kp W &kp F &kp O &kp R &kp LS(K) &kp I &kp D &kp S &kp DLLR &kp N2>;
+            bindings = <&kp N &kp I &kp N &kp E &kp T &kp H &kp R &kp E &kp E &kp F &kp O &kp U &kp R &kp T &kp E &kp LS(X) &kp A &kp S &kp POUND &kp N2 &kp N1>;
             label = "OP1";
         };
 
         OP2: OP2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp O &kp U &kp H &kp A &kp V &kp E &kp C &kp R &kp A &kp Z &kp Y &kp E &kp Y &kp E &kp LS(S) &kp POUND &kp N8>;
+            bindings = <&kp Y &kp O &kp U &kp K &kp N &kp O &kp W &kp F &kp O &kp R &kp LS(K) &kp I &kp D &kp S &kp DLLR &kp N2>;
             label = "OP2";
+        };
+
+        LPA: LPA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp M &kp H &kp U &kp N &kp T &kp I &kp N &kp G &kp W &kp A &kp B &kp B &kp I &kp T &kp LS(S) &kp DLLR &kp N2>;
+            label = "LPA";
         };
 
         OWTTc: OWTTc {
@@ -162,7 +162,7 @@
         QTY {
             bindings = <
                 &kp ESC             &kp Q           &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I      &kp O       &kp P        &kp MINUS
-                &r_lt 2 TAB         &kp A           &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K      &kp L       &kp SEMI     &r_lt 4 APOS
+                &r_lt 2 TAB         &kp A           &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K      &kp L       &kp SEMI     &kp APOS
                 &r_mt LSHIFT CAPS   &kp Z           &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA  &kp DOT     &kp FSLH     &kp BSLH
                                                     &kp F2      &kp F5                                                      &kp DEL    &kp C_MUTE
                                     &r_lt 1 SPACE   &kp LSHFT   &kp BSPC    &kp LALT    &kp LCTRL   &r_lt 3 TAB &kp SPACE   &kp ENTER  &kp LGUI    &r_lt 4 TAB
@@ -189,11 +189,11 @@
             >;
         };
 
-        ADJ {
+        ADJ {   
             bindings = <
-                &trans          &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6  &kp F7  &kp F8          &kp F9          &kp F10     &kp C_PP
-                &none           &none       &OP2        &OP1        &LPA        &WKPG       &RABS   &PKH    &none           &kp F11         &kp F12     &kp C_NEXT
-                &none           &none       &none       &OWTTc      &OWTT       &OWOG       &none   &none   &none           &none           &kp SLCK    &kp C_PREV
+                &trans          &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6          &kp F7          &kp F8          &kp F9  &kp F10     &kp C_PP
+                &none           &none       &OP2        &OP1        &LPA        &WKPG       &RABS           &PKH            &none           &kp F11 &kp F12     &kp C_NEXT
+                &none           &none       &none       &OWTTc      &OWTT       &OWOG       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none   &kp SLCK    &kp C_PREV
                                             &none       &none                                               &bt BT_SEL 0    &bt BT_SEL 1
                                 &CPS        &UID        &EML        &HANGER     &HANGERU    &none   &to 4   &none           &none           &trans
             >;
