@@ -195,7 +195,7 @@
                 &none           &none       &OP2        &OP1        &LPA        &WKPG       &RABS           &PKH            &none           &kp F11 &kp F12     &kp C_NEXT
                 &none           &none       &none       &OWTTc      &OWTT       &OWOG       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &none   &kp SLCK    &kp C_PREV
                                             &none       &none                                               &bt BT_SEL 0    &bt BT_SEL 1
-                                &CPS        &UID        &EML        &HANGER     &HANGERU    &none   &to 4   &none           &none           &trans
+                                &CPS        &UID        &EML        &HANGER     &HANGERU    &none           &to 4           &none           &none           &trans
             >;
         };
 
